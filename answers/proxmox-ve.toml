@@ -1,5 +1,5 @@
 [global]
-keyboard = "de-de"
+keyboard = "de"
 country = "de"
 fqdn = "proxmox-ve.local"
 mailto = "schuler.ralph@icloud.com"
