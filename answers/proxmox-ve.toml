@@ -16,7 +16,6 @@ source = "from-dhcp"
 [disk-setup]
 filesystem = "ext4"
 lvm.swapsize = 16
-disk_list = ['sda']
 
 [first-boot]
 source = "from-iso"
