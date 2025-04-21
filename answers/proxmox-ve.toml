@@ -1,0 +1,26 @@
+[global]
+keyboard = "de-de"
+country = "de"
+fqdn = "proxmox-ve.local"
+mailto = "schuler.ralph@icloud.com"
+timezone = "Europe/Berlin"
+root_password = "FH85R9SW1R2"
+
+# root_ssh_keys = [
+#     "ssh-ed25519 AAAA..."
+# ]
+
+[network]
+source = "eno1"
+cidr = "192.168.1.100/24"
+dns = "192.168.1.1"
+gateway = "192.168.1.1"
+
+# filter.ID_NET_NAME_MAC = "*00005E0053f0"
+filter.ID_NET_NAME = "eno1"
+
+[disk-setup]
+filesystem = "ext4"
+lvm.swapsize = 0
+lvm.maxvz = 0
+disk_list = ['sda']
