@@ -1,0 +1,23 @@
+[global]
+keyboard = "de-de"
+country = "de"
+fqdn = "proxmox-ve.local"
+mailto = "schuler.ralph@icloud.com"
+timezone = "Europe/Berlin"
+root_password = "FH85R9SW1R2"
+
+root_ssh_keys = [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCfXKVKea1fXXfnx17R/x3Q3DsnR/EJ9YX2k+MP1nHcW+4rvK3wTbnQyMVqJpUWUqiUFyPyQEOmWvKnwv4SwE77B+C5Th+rK76SLMObZWU9Mdvn2cyzQosUIzzSHqneMED7AX6mDdDpbrwGM+bbVHX7J+oYxara0ZQW53CLiItDxOg/vwJ6r7WMlCF6O0vTprm2kP6NdlINvaVnlRiDIZvAwI86mJ87SZHJk5x9HfAMsZyGPj+KueEwcgkAfvsTR/nVmJfLVqcgryLDETM31D0LEN7hR5klatc0m2UWzbiKbFF/qxxFEPuqODmPbrDJnn9tMHUm//j+knSUrUwqhfD6aM/yqs6LQV+/PgVCanQ4VRB4N5sMqAl55OX+ph2O12KOiSV4CrwpOvvVv9x/6xx4PAWlb4g789OVDhpOnYtCRUYS3uLiGPn4BewJsaDjKVCn+ibpjCb+rSHkSwxF2PWpeo+d3JHSj2Sk7lYCy1nc+jc2LMtxGnoiQkvIXChyhys="
+]
+
+[network]
+source = "from-dhcp"
+
+[disk-setup]
+filesystem = "ext4"
+lvm.swapsize = 16
+disk_list = ['sda']
+
+[first-boot]
+source = "from-iso"
+ordering = "before-network"
